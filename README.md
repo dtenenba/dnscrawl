@@ -72,3 +72,7 @@ grep "Nov 23" certinfo.tsv | grep 2018 > expiring.txt
 Now `expiring.txt` contains the names of hosts whose certificates expire in November 2018. These **should** have the same certificate serial number  (indicating the `fhcrc.org` wildcard certificate and expiration date).
 
 
+## Notes
+
+* This only scans port 443. We can modify it to scan other ports.
+* This program **may** set off alarm bells in ISO, but I have not gotten in trouble yet.
